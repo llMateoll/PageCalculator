@@ -1509,8 +1509,8 @@
 
                 </div>
                 <div class="col-md-6">
-                    <!-- CALCULATOR -->
-                  <iframe id="calculator" src="https://app.calconic.com/api/embed/calculator/5d83e9bb54e7dd001eadd22d" sandbox="allow-same-origin allow-forms allow-scripts allow-top-navigation allow-popups-to-escape-sandbox allow-popups" title="Calconic_ Calculator" name="Calconic_ Calculator" height="1015px" scrolling="yes" style="width: 300px; border: 0; border: 2px solid rgba(74, 74, 74, 1); border-radius: 8px; outline: none;"></iframe>
+                  <!-- CALCULATOR -->
+                  <iframe src="https://app.calconic.com/api/embed/calculator/5d83e9bb54e7dd001eadd22d" sandbox="allow-same-origin allow-forms allow-scripts allow-top-navigation allow-popups-to-escape-sandbox allow-popups" title="Calconic_ Calculator" name="Calconic_ Calculator" height="1048px" scrolling="yes" style="width: 300px; border: 0; border: 2px solid rgba(74, 74, 74, 1); border-radius: 8px; outline: none;"></iframe>
                 </div>
             </div>
         </div>
@@ -1628,18 +1628,20 @@
     <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
     <!-- == -->
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=#{property?._id}&product=custom-share-buttons"></script>
+    
 
+    <!-- CALCONIC -->
     <script>
-        (function() {
-          window.addEventListener("message",function(t){
-            var e="https://www.paypalobjects.com/api/checkout.4.0.141.js";
-            if(!document.querySelector('script[src="'+e+'"]')&&t.data&&"LOAD_PAYPAL"===t.data.action){
-            var a=document.createElement("script");a.src=e,a.async=!0,a.dataset={paypalCheckout:!0,noBridge:!0,state:"ppxo_meta",env:"production"},document.body.append(a)
-            }if(t.data&&"CALCONIC_UPDATE_HEIGHT"===t.data.action){
-            var s=documenet.querySelector('iframe[src="https://app.calconic.com/api/embed/calculator/t.data.payload.id"]');
-            if(s){s.height=t.data.payload.height}}
-          });
-        })();
+      (function() {
+        window.addEventListener("message",function(t){
+          var e="https://www.paypalobjects.com/api/checkout.4.0.141.js";
+          if(!document.querySelector('script[src="'+e+'"]')&&t.data&&"LOAD_PAYPAL"===t.data.action){
+          var a=document.createElement("script");a.src=e,a.async=!0,a.dataset={paypalCheckout:!0,noBridge:!0,state:"ppxo_meta",env:"production"},document.body.append(a)
+          }if(t.data&&"CALCONIC_UPDATE_HEIGHT"===t.data.action){
+          var s=documenet.querySelector('iframe[src="https://app.calconic.com/api/embed/calculator/t.data.payload.id"]');
+          if(s){s.height=t.data.payload.height}}
+        });
+      })();
     </script>
 
     </body>
