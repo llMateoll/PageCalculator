@@ -1032,6 +1032,7 @@
         background-size: auto, cover;
         background-attachment: fixed, fixed;
         background-position: center, center;
+        background-repeat: no-repeat !important;
       }
     }
 
@@ -1242,9 +1243,10 @@
         padding-top: 6.5em;
         background-image: linear-gradient(to top,rgba(20, 20, 20, 0.945),rgba(20, 20, 20, 0.945)),
         url("https://lets.gohubtek.com/backgruond1");
-        background-size: auto, cover;
+        background-size: cover;
         background-attachment: fixed, fixed;
         background-position: center, center;
+        background-repeat: no-repeat !important;
       }
     }
 
@@ -1332,6 +1334,57 @@
     }
 
     /* RESPONSIVE EBOOK, VIDEO, CALCULATOR */
+
+    @media (width: 800px) {
+      .texto-ebook p,h2{
+        text-align: center !important;
+      }
+      .texto-ebook p{
+        font-size: 16px !important;
+        text-align: center !important;
+        padding-left: 20%;
+      }
+      .texto-ebook h2{
+        padding-top: 5%;
+        font-size: 20px !important;
+        padding-left: 20%;
+      }
+      #banner h2{
+        border-bottom: none;
+      }
+    }
+
+    @media (width: 1024px) {
+      .texto-ebook p,h2{
+        text-align: center !important;
+      }
+      .texto-ebook p{
+        font-size: 18px !important;
+        text-align: center !important;
+        padding-left: 20%;
+      }
+      .texto-ebook h2{
+        padding-top: 5%;
+        font-size: 24px !important;
+        padding-left: 20%;
+      }
+    }
+
+    @media (width: 1280px) {
+      .texto-ebook p,h2{
+        text-align: center !important;
+      }
+      .texto-ebook p{
+        font-size: 20px !important;
+        text-align: center !important;
+        padding-left: 20%;
+      }
+      .texto-ebook h2{
+        padding-top: 5%;
+        font-size: 26px !important;
+        padding-left: 20%;
+      }
+    }
 
     @media screen and (max-width: 736px) {
       .ebook{
